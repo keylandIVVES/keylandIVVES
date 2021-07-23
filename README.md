@@ -20,7 +20,7 @@ Un autoencoder (o autocodificador) es una herramienta que sirve para, a través 
 más fiel posible al original. Ya que los datos de entrada no están etiquetados, se trata de un modelo sin supervisión, en el que
 comprimimos en las capas interiores las características más importantes de esas imágenes.
 
-![Autoencoder](media/image1.png)
+![Autoencoder](media/Keyland IVVES - 1.png?raw=true "Title")
 
 El autoencoder está formado por dos partes:
 
