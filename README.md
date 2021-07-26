@@ -20,19 +20,19 @@ Un autoencoder (o autocodificador) es una herramienta que sirve para, a través 
 más fiel posible al original. Ya que los datos de entrada no están etiquetados, se trata de un modelo sin supervisión, en el que
 comprimimos en las capas interiores las características más importantes de esas imágenes.
 
-![Autoencoder](media/Keyland IVVES - 1.png?raw=true "Title")
+![Autoencoder](media/KeylandIVVES-1.png?raw=true "Funcionamiento de un autoencoder")
 
 El autoencoder está formado por dos partes:
 
-**·<ins>Encoder</ins>:**
+**1. <ins>Encoder</ins>:**
     Primera parte del modelo que comprime la entrada en una representación comprimida de las principales características y puede describirse con la función h = f(x).
 
-**·<ins>Decoder</ins>:**
+**2. <ins>Decoder</ins>:**
     Segunda parte del modelo que descomprime la representación del encoder y puede describirse con la función r = g(h).
 
 La representación del autoencoder puede describirse con la función r = g(f(x)).
 
-![](media/image2.png){width="5.905555555555556in" height="1.1875in"}
+![Autoencoder](media/KeylandIVVES-2.png?raw=true "Representación de un autoencoder")
 
 En el caso de que el tamaño de la entrada y de la salida sean iguales al de la capa intermedia, el modelo se limitaría a copiar las
 características neurona por neurona, por lo que deberemos imponer una serie de restricciones para evitar casos como este, como pueden ser:
@@ -100,12 +100,7 @@ Para ello, el Extended Isolation Forest propone, en vez de iterar sobre cada una
 iterar, lo realiza sobre hiperplanos, por lo que hace cada uno de los cortes sobre todas las dimensiones existentes, con lo que en
 determinados casos, la aproximación a la realidad es mucho mayor:
 
-  ----------------------------------------------------------------------------------------------
-  ![](media/image3.png){width="1.625in"   **-\>**   ![](media/image4.png){width="3.53125in"
-  height="1.6686832895888013in"}                    height="1.6884864391951007in"}
-  --------------------------------------- --------- --------------------------------------------
-
-  ----------------------------------------------------------------------------------------------
+![Extended Isolation Forest](media/KeylandIVVES-3.png?raw=true "IF vs EIF")
 
 ### Explicabilidad del modelo - LIME
 
@@ -135,10 +130,10 @@ lo que se están centrando las miradas, y sobre lo que se enfoca LIME.
 LIME (Local Interpretable Model-agnostic Explanations) es un modelo que busca abordar esta problemática de manera accesible y sencilla. Las dos
 principales características del modelo son:
 
-**·<ins>Agnóstico</ins>**
+**1. <ins>Agnóstico</ins>**
     LIME es agnóstico al modelo, de tal manera que puede ser utilizado en prácticamente todos los problemas del dominio.
     
-**·<ins>Explicaciones locales</ins>**
+**2. <ins>Explicaciones locales</ins>**
     Los resultados de LIME no son sobre todo el modelo general, sino sobre una muestra específica, en la cual se plasma qué factores son los más influyentes para que el
     resultado sea el reflejado.
 
